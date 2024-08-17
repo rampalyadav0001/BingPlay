@@ -19,12 +19,13 @@ app.use(cookieParser())
 //routes import
 
 import userRouter from './routes/user.routes.js'
-
+import videoRouter from './routes/video.routes.js'
 //routes declaration
 
-app.use("/api/v1/users", userRouter)
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/videos", videoRouter)
 
-// http://locaolhost:8000/api/v1/users/register
+// http://locolhost:8000/api/v1/users/register
 
 
 export {app}
